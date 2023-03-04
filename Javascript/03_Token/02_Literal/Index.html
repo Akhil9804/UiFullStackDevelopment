@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>02_Literal</title>
+    <style>
+      h1 {
+        text-align: center;
+        text-decoration: underline double white 3px;
+        border: 3px double white;
+        background-color: cadetblue;
+        color: white;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JS Literal</h1>
+  </body>
+  <script>
+    /**
+     * TODO :: Integer Literal
+     */
+    var num1 = 10;
+    console.log(`Value and type of num1 :: ${num1} ${typeof num1}`);
+    var num2 = 10.55;
+    console.warn(`Value and type of num2 :: ${num2} ${typeof num2}`);
+
+    /**
+     * TODO :: Boolean Literal
+     */
+    var booleanValue1 = true;
+    console.error(
+      `Value and type of booleanValue1 :: ${booleanValue1} ${typeof booleanValue1}`
+    );
+    var booleanValue2 = false;
+    console.log(
+      `Value and type of booleanValue2 :: ${booleanValue2} ${typeof booleanValue2}`
+    );
+
+    /**
+     * TODO :: String Literal
+     */
+    var char = "a";
+    console.warn(`Value and type of char :: ${char} ${typeof char}`);
+    var string = "Akhil";
+    console.error(`Value and type of string :: ${string} ${typeof string}`);
+
+    /**
+     * TODO :: Array Literal
+     */
+    var arr1 = [10, "Akhil", 10.52];
+    console.log(`Value and type of arr1 :: ${arr1} ${typeof arr1}`);
+
+    /**
+     * TODO :: Object Literal
+     */
+    var obj1 = {
+      value1: 10,
+      value2: 10.52,
+      func: function () {
+        console.log("Inside obj1 Object");
+      },
+    };
+    console.warn(obj1);
+    console.error(`Value and type of obj1 :: ${obj1} ${typeof obj1}`);
+  </script>
+</html>

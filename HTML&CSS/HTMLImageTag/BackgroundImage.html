@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Background Image</title>
+    <style>
+
+      h1{
+        border: 3px double purple;
+        background-color: purple;
+        text-align: center;
+        font-family: sans-serif;
+        color: white;
+        padding: 10px;
+        clear: both;
+      }
+      
+      .container{
+        width: 500px;
+        height: 500px;
+        border: 3px double purple;
+        background-image: url("https://www.shutterstock.com/image-vector/vector-antonyms-opposites-cartoon-characters-260nw-1246528834.jpg");
+        margin: 10px auto;    
+      }
+
+      .repeat_no_repeat{
+        background-repeat: no-repeat;
+        float: left;
+        margin-bottom: 10px;
+      }
+
+      .repeat_no_repeat_cover{
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: right;
+        margin-bottom: 10px;
+        width: 700px;
+      }
+      
+      .repeat_x_repeat{
+        background-repeat: repeat-x;
+      }
+
+      .repeat-y_repeat{
+        background-repeat: repeat-y;
+        background-size: 220px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Background Repeat : no repeat
+    </h1>
+    <div class="container repeat_no_repeat">
+      
+    </div>
+
+    <div class="container repeat_no_repeat_cover">
+      
+    </div>
+    <h1>
+      Background Repeat : repeat-x
+    </h1>
+    <div class="container repeat_x_repeat">
+      
+    </div>
+    <h1>
+      Background Repeat : repeat-y
+    </h1>
+    <div class="container repeat-y_repeat">
+      
+    </div>
+    <h1>
+      Background Repeat : none
+    </h1>
+    <div class="container" >
+      
+    </div>
+  </body>
+</html>

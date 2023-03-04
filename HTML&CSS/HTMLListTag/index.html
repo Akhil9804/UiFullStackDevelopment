@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List Tag</title>
+    <link rel="icon" type="image/x-icon" href="list.png">
+    <style>
+
+      h3,h4{
+        border-width: 3px;
+        border-style: double;
+        border-color: blue;
+        padding: 10px;
+        text-align: center;
+        text-decoration: underline double white 2px;
+        color: white;
+        background-color: blue;
+      }
+
+      li{
+        border: 1px solid red;
+        padding: 10px;
+        background-color: violet;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      
+      ul{
+        list-style-type: circle;
+        list-style-position: inside;
+      }   
+
+      ol{
+        list-style-position: inside;
+      }
+
+      dl{
+        border:3px double purple;
+        padding: 10px;
+        background-color: lightgreen;
+      }
+
+      dt{
+        border: 1px solid;
+        font-family: sans-serif;
+        color: white;
+        background-color: purple;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+      }
+
+      dd{
+        color: white;
+        border: 1px dashed;
+        background-color: blue;
+        font-family: sans-serif;
+        font-style: italic;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Unordered List</h3>
+    <h4>Tiffins</h4>
+    <ul>
+      <li>Idly</li>
+      <li>Poori</li>
+      <li>Dosa
+        <ul style="list-style-type:square;">
+          <li>Masala Dosa</li>
+          <li>Upma Dosa</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <h4>Personal Details</h4>
+    <ol>
+      <li>
+        Family
+        <ol type="a" start="3">
+          <li>Rama Krishna</li>
+          <li>Suneetha</li>
+          <li>Akhil</li>
+          <li>Akshya</li>
+        </ol>
+      </li>
+      <li>
+        Male Friends
+        <ol type="i" start="4" reversed>
+          <li>Ujwal</li>
+          <li>Devi Prasad</li>
+          <li>Arun Teja</li>
+        </ol>
+      </li>
+      <li>
+        Female Friends
+        <ol type="A" reversed>
+          <li>Aparna</li>
+          <li>Radhika</li>
+          <li>Hemalatha</li>
+        </ol>
+      </li>
+    </ol>
+    <h3>Descriptive List</h3>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Hyper Text Markup Language</dd>
+      <dd>Describes the Content of a web page</dd>
+    </dl>
+  </body>
+</html>

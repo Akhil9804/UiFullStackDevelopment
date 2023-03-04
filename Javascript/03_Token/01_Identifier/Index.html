@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>01_Identifier</title>
+    <style>
+      h1 {
+        text-align: center;
+        text-decoration: underline double white 3px;
+        border: 3px double white;
+        background-color: cadetblue;
+        color: white;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JS Identifier</h1>
+  </body>
+  <script>
+    
+    /**
+     * TODO :: num1 is an variable identifier
+    */
+
+    var num1 = 10;
+    console.log("Value and type of num1 :: " + num1 + " " + typeof num1);
+
+    /**
+     *  TODO :: addValue is an function identifier
+     */ 
+
+    function addValue(a, b) {
+      return a + b;
+    }
+
+    var result = addValue(num1, 30);
+    console.log(`${num1} + 30 :: ${result}`);
+
+    /**
+     *  TODO :: studentDetail is object identifier
+     */
+
+    var studentDetail = {
+      studentName: "Akhil",
+      studentRollNumber: "15551A0535",
+      studentBranch: "CSE",
+      studentMarks: [80, 60, 70],
+
+      calculateTotalMarks: function () {
+        var lenght = this.studentMarks.length;
+        var total = 0;
+        for (var i = 0; i < lenght; i++) {
+          total += this.studentMarks[i];
+        }
+        studentDetail.studentTotalMarks = total;
+        this.calculateAverage();
+      },
+
+      calculateAverage: function () {
+        var lenght = this.studentMarks.length;
+        studentDetail.studentAverage = this.studentTotalMarks / lenght;
+        this.findStudentGrade();
+      },
+
+      findStudentGrade: function () {
+        if (this.studentAverage > 60) {
+          this.studentGrade = "Pass";
+        } else {
+          this.studentGrade = "Fail";
+        }
+      },
+    };
+    studentDetail.calculateTotalMarks();
+    console.log(studentDetail);
+
+    /**
+     *  TODO :: collegeDetails is a Class Identifier
+     */
+
+    class collegeDetails {
+      constructor(collegeName, collegeBranch, collegeLocation) {
+        this.collegeName = collegeName;
+        this.collegeBranch = collegeBranch;
+        this.collegeLocation = collegeLocation;
+      }
+
+      displayCollegeDetails() {
+        console.log("College Name :: " + this.collegeName);
+        console.warn("College Branch :: " + this.collegeBranch);
+        console.error(`College Location :: ${this.collegeLocation}`);
+      }
+    }
+
+    var clg1 = new collegeDetails(
+      "GIET",
+      ["CSE", "ECE", `MECH`, "CIVIL", "EEE"],
+      "Rajahmundry"
+    );
+    clg1.displayCollegeDetails();
+  </script>
+</html>

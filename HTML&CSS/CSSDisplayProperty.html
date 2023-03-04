@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Display Property</title>
+    <style>
+
+      h1{
+        text-align: center;
+        border: 1px solid black;
+        padding:10px;
+        background-color: purple;
+        color: white;
+        font-family: sans-serif;
+      }
+      
+      .blockConvertion{
+        color:white;
+        background-color: purple;
+        font-family: sans-serif;
+        border: 1px solid;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        height:150px;
+        display: block;
+      }
+
+      .noBlockConvertion{
+        color:white;
+        background-color: purple;
+        font-family: sans-serif;
+        border: 1px solid;
+        padding: 10px;
+        margin: 10px;
+        width: 150px;
+        height:150px;
+      }
+
+      .inlineConvertion{
+        color:white;
+        background-color: purple;
+        font-family: sans-serif;
+        border: 1px solid;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        height:150px;
+        display: inline;
+      }
+
+      .noInlineConvertion{
+        color:white;
+        background-color: purple;
+        font-family: sans-serif;
+        border: 1px solid;
+        padding: 10px;
+        margin: 10px;
+        width: 150px;
+        height:150px;
+      }
+
+      .divContainer,.displayHidden,.visibilityHidden,.inlineBlockConvertion{
+        color:white;
+        background-color: purple;
+        font-family: sans-serif;
+        border: 1px solid;
+        padding: 10px;
+        margin: 10px;
+        width: 150px;
+        height:150px;
+      }
+
+      .displayNone{
+        display: none;
+      }
+
+      .visibilityHidden{
+        visibility:hidden;
+      }
+
+      .inlineBlockConvertion{
+        width: 400px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Block Level and Inline propertys</h1>
+    <span class="blockConvertion">
+      Span is a inline element but converted to block level element
+    </span>
+    <span class="noBlockConvertion">
+      Span is a inline element
+    </span>
+
+    <div class="inlineConvertion">
+      Div is a block level element but converted to inline element
+    </div>
+    <div class="noInlineConvertion">
+      Div is a Block Level element
+    </div>
+
+    <h1>Display : inline-block</h1>
+    <span class="inlineBlockConvertion">
+      Span is a inline element but converting to inline block element
+    </span>
+
+    <span style="font-family: sans-serif;color: white;background-color: purple;padding: 10px;border: 1px solid;">Another Span Tag</span>
+
+    <h1>Display : none</h1>
+    <div class="divContainer">
+      Block A
+    </div>
+
+    <div class="displayNone">
+      Block B
+    </div>
+
+    <div class="divContainer">
+      Block C
+    </div>
+
+    <h1>Visibility : Hidden</h1>
+    <div class="divContainer">
+      Block A
+    </div>
+
+    <div class="visibilityHidden">
+      Block B
+    </div>
+
+    <div class="divContainer">
+      Block C
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Tag</title>
+    <style>
+      table{
+        border-collapse: collapse;
+        border-color: white;
+        margin:10px auto;
+      }
+
+      th{
+        padding: 10px;
+        font-family: sans-serif;
+        color: white;
+        background-color:violet;
+      }
+      
+      td{
+        padding: 10px;
+        font-family: sans-serif;
+        color: white;
+        background-color: purple;
+        text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <table border = "1">
+      <thead>
+        <tr>
+          <th>Group Id</th>
+          <th>Full Name</th>
+          <th>Roll Number</th>
+          <th>Course</th>
+          <th>Attendance Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>Hemalatha</td>
+          <td>15551A0535</td>
+          <td>CSE</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>Swathi</td>
+          <td>15551A0536</td>
+          <td>CSE</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td rowspan="2">03</td>
+          <td>Aparna</td>
+          <td>15551A0556</td>
+          <td rowspan="2">ECE</td>
+          <td rowspan="2">100</td>
+        </tr>
+        <tr>
+          <td>Radhika</td>
+          <td>15551A0557</td>
+        </tr>
+        <tr>
+          <td colspan = "5">Akhil Kandula</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
