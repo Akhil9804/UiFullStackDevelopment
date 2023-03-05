@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Not Equal To Operator</title>
+    <title>Strictly Not Equal To Operator</title>
     <style>
       h1 {
         text-align: center;
         padding: 10px;
-        background-color: cadetblue;
-        color: white;
         font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: cadetblue;
       }
     </style>
   </head>
   <body>
-    <h1>Not Equal To Operator in JS</h1>
+    <h1>Strictly Not Equal To Operator</h1>
   </body>
   <script>
     /**
-     * TODO :: Not Equal To Operator
+     * TODO :: Strictly Not Equal To Operator
      */
 
     /**
@@ -26,9 +26,9 @@
     var num1 = 10;
     var num2 = 20;
     console.log(`Type of num1 and num2 :: ${typeof num1} ${typeof num2}`);
-    console.warn(`${num1} not equal to ${num2} :: ${num1 != num2}`);
+    console.warn(`${num1} strictly not equal to ${num2} :: ${num1 !== num2}`);
     num1 = 20;
-    console.error(`${num1} not equal to ${num2} :: ${num1 != num2}`);
+    console.error(`${num1} strictly not equal to ${num2} :: ${num1 !== num2}`);
 
     /**
      * TODO :: String Literal
@@ -36,9 +36,9 @@
     var str1 = "10";
     var str2 = "20";
     console.log(`Type of str1 and str2 :: ${typeof str1} ${typeof str2}`);
-    console.warn(`${str1} not equal to ${str2} :: ${str1 != str2}`);
+    console.warn(`${str1} strictly not equal to ${str2} :: ${str1 !== str2}`);
     str1 = "20";
-    console.error(`${str1} not equal to ${str2} :: ${str1 != str2}`);
+    console.error(`${str1} strictly not equal to ${str2} :: ${str1 !== str2}`);
 
     /**
      * TODO :: Boolean Literal
@@ -46,9 +46,13 @@
     var bool1 = true;
     var bool2 = false;
     console.log(`Type of bool1 and bool2 :: ${typeof bool1} ${typeof bool2}`);
-    console.warn(`${bool1} not equal to ${bool2} :: ${bool1 != bool2}`);
+    console.warn(
+      `${bool1} strictly not equal to ${bool2} :: ${bool1 !== bool2}`
+    );
     bool1 = false;
-    console.error(`${bool1} not equal to ${bool2} :: ${bool1 != bool2}`);
+    console.error(
+      `${bool1} strictly not equal to ${bool2} :: ${bool1 !== bool2}`
+    );
 
     /**
      * TODO :: Other Literal
@@ -56,8 +60,8 @@
     var num1 = 10;
     var num2 = "20";
     console.log(`Type of num1 and num2 :: ${typeof num1} ${typeof num2}`);
-    console.warn(`${num1} not equal to ${num2} :: ${num1 != num2}`);
+    console.warn(`${num1} strictly not equal to ${num2} :: ${num1 !== num2}`);
     num2 = "10";
-    console.error(`${num1} not equal to ${num2} :: ${num1 != num2}`);
+    console.error(`${num1} strictly not equal to ${num2} :: ${num1 !== num2}`);
   </script>
 </html>

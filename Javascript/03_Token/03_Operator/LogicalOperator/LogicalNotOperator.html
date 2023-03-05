@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>And Operator</title>
+    <title>Logical Not Operator</title>
     <style>
       h1 {
         text-align: center;
@@ -14,15 +14,16 @@
     </style>
   </head>
   <body>
-    <h1>And Operator</h1>
+    <h1>Logical Not Operator</h1>
   </body>
   <script>
     /**
-     * TODO :: And Operator
+     * TODO :: Logical Not Operator
      */
-    var num1 = 10;
-    var num2 = 20;
-    console.log(`Type of num1 and num2 :: ${typeof num1} ${typeof num2}`);
-    console.warn(`${num1} && ${num2} :: ${num1 && num2}`);
+    var bool1 = true;
+    var bool2 = false;
+    console.log(`Type of bool1 and bool2 :: ${typeof bool1} ${typeof bool2}`);
+    console.warn(`! ${bool1} :: ${!bool1}`);
+    console.error(`! ${bool2} :: ${!bool2}`);
   </script>
 </html>
