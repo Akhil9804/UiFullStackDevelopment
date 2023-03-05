@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Datatype</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        background-color: cadetblue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Datatype In JS</h1>
+  </body>
+  <script>
+    /**
+     * TODO :: Integer Literal
+     */
+    var num1 = 10;
+    var num2 = 10.52;
+    console.log(
+      `Value and Type of num1 and num2 :: ${num1} ${typeof num1} ${num2} ${typeof num2}`
+    );
+    console.warn(
+      "Min Value :: " + Number.MIN_VALUE + " Max Value :: " + Number.MAX_VALUE
+    );
+
+    /**
+     * TODO :: String Literal
+     */
+    var str = "Akhil";
+    console.error(`Value and type of str :: ${str} ${typeof str}`);
+
+    /**
+     * TODO :: BigInt Literal
+     */
+    var bigValue = 123333333345678910n;
+    console.log(`Value and type of bigValue :: ${bigValue} ${typeof bigValue}`);
+
+    /**
+     * TODO :: Boolean Literal
+     */
+    var bool1 = true;
+    console.warn(`Value and type of bool1 :: ${bool1} ${typeof bool1}`);
+
+    /**
+     * TODO :: Undefined Literal
+     */
+    var value1;
+    console.error(`Value and type of value1 :: ${value1} ${typeof value1}`);
+
+    var value2 = null;
+    console.log(`Value and type of value2 :: ${value2} ${typeof value2}`);
+  </script>
+</html>
