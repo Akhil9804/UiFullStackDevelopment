@@ -17,48 +17,83 @@
   </body>
   <script>
     /**
-     * TODO :: Converting Other Datatype to Integer Value
+     * TODO :: Number Conversion
      */
-    var str = "10";
-    console.log(`Value and type of str :: ${str} ${typeof str}`);
-    var num = Number(str);
-    console.warn(`Value and type of num :: ${num} ${typeof num}`);
-
-    var bool = true;
-    console.error(`Value and type of bool :: ${bool} ${typeof bool}`);
-    var bool = Number(bool);
-    console.log(`Value and type of bool :: ${bool} ${typeof bool}`);
-    var bool = false;
-    console.warn(`Value and type of bool :: ${bool} ${typeof bool}`);
-    var bool = Number(bool);
-    console.error(`Value and type of bool :: ${bool} ${typeof bool}`);
 
     /**
-     * TODO :: Converting Other Datatype to String Value
+     * TODO :: String to Number Conversion
      */
-    var num = 10;
-    console.log(`Value and type of num :: ${num} ${typeof num}`);
-    var str = String(num);
-    console.warn(`Value and type of str :: ${str} ${typeof str}`);
-    var bool = true;
-    console.error(`Value and type of bool :: ${bool} ${typeof bool}`);
-    var str = String(bool);
-    console.log(`Value and type of str :: ${str} ${typeof str}`);
+    let num = Number("38");
+    console.log(`Value and type of num :: ${num} ${typeof num}`); //38
+    num = Number("");
+    console.warn(`Value and type of num :: ${num} ${typeof num}`); //0
+    num = Number("hello");
+    console.error(`Value and type of num :: ${num} ${typeof num}`); //NaN
+    num = Number(" ");
+    console.log(`Value and type of num :: ${num} ${typeof num}`); //0
 
     /**
-     * TODO :: Converting Other Datatype to Boolean Value
+     * TODO :: Boolean to Number Conversion
      */
-    var num = 10;
-    console.warn(`Value and type of num :: ${num} ${typeof num}`);
-    var bool = Boolean(num);
-    console.error(`Value and type of bool :: ${bool} ${typeof bool}`);
-    var num = 0;
-    console.log(`Value and type of num :: ${num} ${typeof num}`);
-    var bool = Boolean(num);
-    console.warn(`Value and type of bool :: ${bool} ${typeof bool}`);
-    var str = "akhil";
-    console.error(`Value and type of str :: ${str} ${typeof str}`);
-    var bool = Boolean(str);
-    console.log(`Value and type of bool :: ${bool} ${typeof bool}`);
+    num = Number(true);
+    console.warn(`Value and type of num :: ${num} ${typeof num}`); //1
+    num = Number(false);
+    console.error(`Value and type of num :: ${num} ${typeof num}`); //0
+
+    num = Number(undefined);
+    console.log(`Value and type of num :: ${num} ${typeof num}`); //NaN
+    num = Number(NaN);
+    console.warn(`Value and type of num :: ${num} ${typeof num}`); //NaN
+
+    /**
+     * TODO :: Boolean Conversion
+     */
+
+    /**
+     * TODO :: String to boolean Conversion
+     */
+    let bool = Boolean("true");
+    console.error(`Value and type of bool :: ${bool} ${typeof bool}`); //true
+    bool = Boolean("false");
+    console.log(`Value and type of bool :: ${bool} ${typeof bool}`); //true
+    bool = Boolean(" ");
+    console.warn(`Value and type of bool :: ${bool} ${typeof bool}`); //true
+    bool = Boolean("");
+    console.error(`Value and type of bool :: ${bool} ${typeof bool}`); //false
+
+    /**
+     * TODO :: Number to Boolean Conversion
+     */
+    bool = Boolean(12);
+    console.log(`Value and type of bool :: ${bool} ${typeof bool}`); //true
+    bool = Boolean(0);
+    console.warn(`Value and type of bool :: ${bool} ${typeof bool}`); //false
+    bool = Boolean(NaN);
+    console.error(`Value and type of bool :: ${bool} ${typeof bool}`); //false
+    bool = Boolean(undefined);
+    console.log(`Value and type of bool :: ${bool} ${typeof bool}`); //false
+
+    /**
+     * TODO :: Number to String Conversion
+     */
+    let str = String(10);
+    console.warn(`Value and type of str :: ${str} ${typeof str}`); //"10"
+    str = String(10 + 20);
+    console.error(`Value and type of str :: ${str} ${typeof str}`); //"30"
+    str = String(0);
+    console.log(`Value and type of str :: ${str} ${typeof str}`); //'0'
+
+    /**
+     * TODO :: Boolean to String Conversion
+     */
+    str = String(true);
+    console.warn(`Value and type of str :: ${str} ${typeof str}`); //true
+    str = String(false);
+    console.error(`Value and type of str :: ${str} ${typeof str}`); //false
+
+    str = String(undefined);
+    console.log(`Value and type of str :: ${str} ${typeof str}`); //"undefined"
+    str = String(NaN);
+    console.warn(`Value and type of str :: ${str} ${typeof str}`); //'NaN'
   </script>
 </html>
