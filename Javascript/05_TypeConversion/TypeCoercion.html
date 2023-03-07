@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Type Coercion</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        background-color: cadetblue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Type Coercion in JS</h1>
+  </body>
+  <script>
+    let num = 10;
+    let str = "20";
+    console.log(`Type of num and str :: ${typeof num} ${typeof str}`);
+    console.warn(`${num} + ${str} :: ${num + str}`);
+    console.error(`${num} - ${str} :: ${num - str}`);
+    console.log(`${num} * ${str} :: ${num * str}`);
+    console.warn(`${num} / ${str} :: ${num / str}`);
+    console.error(`${num} % ${str} :: ${num % str}`);
+    str = "2";
+    console.log(`${num} ** ${str} :: ${num ** str}`);
+
+    let bool = true;
+    console.warn(`Type of bool and str :: ${typeof bool} ${typeof str}`);
+    console.error(`${bool} + ${str} :: ${bool + str}`);
+    console.log(`${bool} - ${str} :: ${bool - str}`);
+    console.warn(`${bool} * ${str} :: ${bool * str}`);
+    console.error(`${bool} / ${str} :: ${bool / str}`);
+    console.log(`${bool} % ${str} :: ${bool % str}`);
+    console.warn(`${bool} ** ${str} :: ${bool ** str}`);
+
+    let nullValue = null;
+    console.error(
+      `Type of nulValue and num :: ${typeof nullValue} ${typeof num}`
+    );
+    console.log(`${nullValue} + ${num} :: ${nullValue + num}`);
+    console.warn(`${nullValue} - ${num} :: ${nullValue - num}`);
+    console.error(`${nullValue} * ${num} :: ${nullValue * num}`);
+    console.log(`${nullValue} / ${num} :: ${nullValue / num}`);
+    console.warn(`${nullValue} % ${num} :: ${nullValue % num}`);
+  </script>
+</html>

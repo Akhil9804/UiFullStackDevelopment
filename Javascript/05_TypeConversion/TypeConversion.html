@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Type Conversion</title>
+    <style>
+      h1 {
+        text-align: center;
+        background-color: cadetblue;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Type Conversion in JS</h1>
+  </body>
+  <script>
+    /**
+     * TODO :: Converting Other Datatype to Integer Value
+     */
+    var str = "10";
+    console.log(`Value and type of str :: ${str} ${typeof str}`);
+    var num = Number(str);
+    console.warn(`Value and type of num :: ${num} ${typeof num}`);
+
+    var bool = true;
+    console.error(`Value and type of bool :: ${bool} ${typeof bool}`);
+    var bool = Number(bool);
+    console.log(`Value and type of bool :: ${bool} ${typeof bool}`);
+    var bool = false;
+    console.warn(`Value and type of bool :: ${bool} ${typeof bool}`);
+    var bool = Number(bool);
+    console.error(`Value and type of bool :: ${bool} ${typeof bool}`);
+
+    /**
+     * TODO :: Converting Other Datatype to String Value
+     */
+    var num = 10;
+    console.log(`Value and type of num :: ${num} ${typeof num}`);
+    var str = String(num);
+    console.warn(`Value and type of str :: ${str} ${typeof str}`);
+    var bool = true;
+    console.error(`Value and type of bool :: ${bool} ${typeof bool}`);
+    var str = String(bool);
+    console.log(`Value and type of str :: ${str} ${typeof str}`);
+
+    /**
+     * TODO :: Converting Other Datatype to Boolean Value
+     */
+    var num = 10;
+    console.warn(`Value and type of num :: ${num} ${typeof num}`);
+    var bool = Boolean(num);
+    console.error(`Value and type of bool :: ${bool} ${typeof bool}`);
+    var num = 0;
+    console.log(`Value and type of num :: ${num} ${typeof num}`);
+    var bool = Boolean(num);
+    console.warn(`Value and type of bool :: ${bool} ${typeof bool}`);
+    var str = "akhil";
+    console.error(`Value and type of str :: ${str} ${typeof str}`);
+    var bool = Boolean(str);
+    console.log(`Value and type of bool :: ${bool} ${typeof bool}`);
+  </script>
+</html>

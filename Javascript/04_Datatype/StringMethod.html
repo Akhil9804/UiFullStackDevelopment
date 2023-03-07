@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>String Method</title>
+    <style>
+      h1 {
+        text-align: center;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: cadetblue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>String Method</h1>
+  </body>
+  <script>
+    var str = "akhil";
+    console.log(`Value and type of str :: ${str} ${typeof str}`);
+
+    /**
+     * TODO :: Converts a string to uppercase.
+     */
+    var upperConvertString = str.toUpperCase();
+    console.warn("upperConvertString :: " + upperConvertString);
+
+    /**
+     * TODO :: Converts a string to lowercase.
+     */
+    var lowerConvertString = upperConvertString.toLowerCase();
+    console.error("lowerConvertString :: " + lowerConvertString);
+
+    /**
+     * TODO :: Returns the index of the first occurrence of a specified value in a string.
+     */
+    var indexOfString = lowerConvertString.indexOf("k");
+    console.log("indexOfString :: " + indexOfString);
+
+    /**
+     * TODO :: Returns the character at a specified index in a string.
+     */
+    var charAtString = str.charAt(2);
+    console.warn("charAtString :: " + charAtString);
+
+    var str = "Akhil is good boy";
+
+    /**
+     * TODO :: Returns the delimiter as an argument and splits a string into an array of substrings
+     */
+    var words = str.split(" ");
+    console.log("Words :: " + words);
+
+    /**
+     * TODO :: The join() method takes an optional separator as an argument and joins the elements of an array into a single string,
+     */
+    var sentence = words.join(",");
+    console.warn("Sentence :: " + sentence);
+
+    var count = str.length;
+    console.error("str :: " + str + " count :: " + count);
+  </script>
+</html>
