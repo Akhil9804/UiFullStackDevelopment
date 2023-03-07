@@ -16,34 +16,75 @@
     <h1>Type Coercion in JS</h1>
   </body>
   <script>
-    let num = 10;
-    let str = "20";
-    console.log(`Type of num and str :: ${typeof num} ${typeof str}`);
-    console.warn(`${num} + ${str} :: ${num + str}`);
-    console.error(`${num} - ${str} :: ${num - str}`);
-    console.log(`${num} * ${str} :: ${num * str}`);
-    console.warn(`${num} / ${str} :: ${num / str}`);
-    console.error(`${num} % ${str} :: ${num % str}`);
-    str = "2";
-    console.log(`${num} ** ${str} :: ${num ** str}`);
+    /**
+     * TODO :: Implicit Conversion of Number to String
+     */
+    let num = "3" + 3;
+    console.log(`Value and type of num :: ${num} ${typeof num}`); //33
+    num = "4" + true;
+    console.warn(`Value and type of num :: ${num} ${typeof num}`); //4true
+    num = "5" + undefined;
+    console.error(`Value and type of num :: ${num} ${typeof num}`); //5undefined
+    num = "6" + NaN;
+    console.log(`Value and type of num :: ${num} ${typeof num}`); //6NaN
 
-    let bool = true;
-    console.warn(`Type of bool and str :: ${typeof bool} ${typeof str}`);
-    console.error(`${bool} + ${str} :: ${bool + str}`);
-    console.log(`${bool} - ${str} :: ${bool - str}`);
-    console.warn(`${bool} * ${str} :: ${bool * str}`);
-    console.error(`${bool} / ${str} :: ${bool / str}`);
-    console.log(`${bool} % ${str} :: ${bool % str}`);
-    console.warn(`${bool} ** ${str} :: ${bool ** str}`);
+    /**
+     * Implicit Conversion of string to number
+     */
+    num = "4" - "2";
+    console.warn(`Value and type of num :: ${num} ${typeof num}`); //2.
+    num = "3" - "1";
+    console.error(`Value and type of num :: ${num} ${typeof num}`); //2
+    num = "4" * 2;
+    console.log(`Value and type of num :: ${num} ${typeof num}`); //8
+    num = "5" / "2";
+    console.warn(`Value and type of num :: ${num} ${typeof num}`); //2.5
+    num = "5" % 2;
+    console.log(`Value and type of num :: ${num} ${typeof num}`); //1
+    num = "2" ** "3";
+    console.warn(`Value and type of num :: ${num} ${typeof num}`); //8
 
-    let nullValue = null;
-    console.error(
-      `Type of nulValue and num :: ${typeof nullValue} ${typeof num}`
-    );
-    console.log(`${nullValue} + ${num} :: ${nullValue + num}`);
-    console.warn(`${nullValue} - ${num} :: ${nullValue - num}`);
-    console.error(`${nullValue} * ${num} :: ${nullValue * num}`);
-    console.log(`${nullValue} / ${num} :: ${nullValue / num}`);
-    console.warn(`${nullValue} % ${num} :: ${nullValue % num}`);
+    num = "hello" - "world";
+    console.error(`Value and type of num :: ${num} ${typeof num}`); //NaN
+    num = 8 - "world";
+    console.log(`Value and type of num :: ${num} ${typeof num}`); //NaN
+
+    /**
+     * TODO :: Boolean to Number
+     */
+    let bool = true + false;
+    console.warn(`Value and type of bool :: ${bool} ${typeof bool}`); //1
+    bool = true + 2;
+    console.error(`Value and type of bool :: ${bool} ${typeof bool}`); //3
+    bool = false - 2;
+    console.log(`Value and type of bool :: ${bool} ${typeof bool}`); //-2
+    bool = true - "2";
+    console.warn(`Value and type of bool :: ${bool} ${typeof bool}`); //-1
+
+    /**
+     * TODO :: Null Scenarios
+     */
+    num = 5 + null;
+    console.error(`Value and type of num :: ${num} ${typeof num}`); //5
+    num = true - null;
+    console.log(`Value and type of num :: ${num} ${typeof num}`); //1
+    num = false + null;
+    console.warn(`Value and type of num :: ${num} ${typeof num}`); //0
+    num = "6" - null;
+    console.error(`Value and type of num :: ${num} ${typeof num}`); //6
+
+    /**
+     * TODO :: Undefined Scenorios
+     */
+    num = 5 + undefined;
+    console.log(`Value an type of num :: ${num} ${typeof num}`); //NaN
+    num = true - undefined;
+    console.warn(`Value an type of num :: ${num} ${typeof num}`); //NaN
+    num = false + undefined;
+    console.error(`Value an type of num :: ${num} ${typeof num}`); //NaN
+    num = "8" * undefined;
+    console.log(`Value an type of num :: ${num} ${typeof num}`); //NaN
+    num = NaN + undefined;
+    console.warn(`Value an type of num :: ${num} ${typeof num}`); //NaN
   </script>
 </html>
