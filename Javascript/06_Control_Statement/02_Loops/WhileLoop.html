@@ -18,9 +18,25 @@
   <script>
     let initialValue = 0;
     let num = parseInt(prompt("Enter the number"));
+
+    /**
+     * TODO :: First Example
+     */
     while (initialValue < num) {
       console.log(`5 * ${initialValue} :: ${5 * initialValue}`);
       initialValue++;
+    }
+
+    /**
+     * TODO :: Second Example
+     */
+    count = 0;
+    while (true) {
+      console.warn(`Count Value :: ${count}`);
+      count++;
+      if (count === 10) {
+        break;
+      }
     }
   </script>
 </html>
