@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>For Loop</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        background-color: cadetblue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>For Loop in JS</h1>
+  </body>
+  <script>
+    /**
+     * TODO :: initialExpression; condition; updateExpression
+     *
+     */
+    let count = 10;
+    for (let i = 0; i < count; i++) {
+      console.log(`5 * ${i} :: ${5 * i}`);
+    }
+
+    /**
+     * TODO :: Second Example
+     */
+    for (let i = count; i >= 0; i--) {
+      console.warn(`5 * ${i} :: ${5 * i}`);
+    }
+
+    /**
+     * TODO :: Third Example
+     */
+    for (let i = 0; i <= 100; i += 2) {
+      console.error("Even Number :: " + i);
+    }
+  </script>
+</html>
