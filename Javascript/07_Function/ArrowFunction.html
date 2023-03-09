@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arrow Function</title>
+    <style>
+      h1 {
+        text-align: center;
+        padding: 10px;
+        background-color: cadetblue;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Arrow Function in JS</h1>
+  </body>
+  <script>
+    var printData = () => console.log(`My name is Akhil Kandula`);
+    printData();
+
+    var printData = (fatherName) => `My Father name is ${fatherName}`;
+    console.warn(printData("Rama Krishna"));
+
+    var greetJs = (firstName, lastName) => {
+      console.error("Welcome to JS World");
+      console.log(`My name is ${firstName} ${lastName}`);
+      console.warn("How may I help you");
+    };
+
+    greetJs("Akhil", "Kandula");
+
+    var sumOfTwoNumber = () => {
+      let num1 = 10;
+      let num2 = 20;
+      console.error("Performing sum of two number");
+      return num1 + num2;
+    };
+
+    var result = sumOfTwoNumber();
+    console.log("Result :: " + result);
+  </script>
+</html>

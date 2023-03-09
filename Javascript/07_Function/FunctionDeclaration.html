@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function Declaration</title>
+    <style>
+      h1 {
+        text-align: center;
+        padding: 10px;
+        background-color: cadetblue;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Function Declaration in JS</h1>
+  </body>
+  <script>
+    function greet() {
+      console.log(`Welcome to JS World`);
+    }
+
+    greet();
+
+    function greetJs(firstName, lastName) {
+      console.warn(`My name is ${firstName} ${lastName}`);
+    }
+
+    greetJs("Akhil", "Kandula");
+
+    function subtraction() {
+      let num1 = 40;
+      let num2 = 20;
+      return num1 - num2;
+    }
+
+    console.error(`Subtraction of two number :: ${subtraction()}`);
+  </script>
+</html>
