@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Object</title>
+    <style>
+      h1 {
+        text-align: center;
+        padding: 10px;
+        background-color: cadetblue;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Object in JS</h1>
+  </body>
+  <script>
+    /**
+     * TODO :: Creating Object
+     */
+    let studentDetails = {
+      studentName: "Akhil",
+      studentRollNumber: "15551A0535",
+      studentBranch: "CSE",
+      studentMarks: [30, 40, 50],
+      calcStudentMark: function () {
+        this.totalMarks = 0;
+        let totalSubject = this.studentMarks.length;
+        for (let i = 0; i < totalSubject; i++) {
+          this.totalMarks += this.studentMarks[i];
+        }
+        this.avgMarks = this.totalMarks / totalSubject;
+      },
+    };
+
+    studentDetails.calcStudentMark();
+    console.log(studentDetails);
+    console.warn("Student Name :: " + studentDetails.studentName);
+    console.error("Student Branch :: " + studentDetails["studentBranch"]);
+  </script>
+</html>
