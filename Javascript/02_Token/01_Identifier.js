@@ -1,4 +1,6 @@
-// firstName, lastName and age are variable Identifier
+/**
+ * TODO :: firstName, lastName and age are variable Identifier
+ */
 var firstName = "Akhil";
 let lastName = "Kandula";
 const age =
@@ -9,7 +11,9 @@ console.log("First Name :: " + firstName);
 console.warn("Last Name :: " + lastName);
 console.error(`Age :: ${age}`);
 
-// educationDetails is function declaration
+/**
+ * TODO :: educationDetails is function declaration
+ */
 function educationDetails(
   schoolName,
   schoolAddress,
@@ -18,12 +22,16 @@ function educationDetails(
   collegeAddress,
   collegeYear
 ) {
-  // School Details
+  /**
+   * TODO :: School Details
+   */
   console.log("School Name :: " + schoolName);
   console.warn("School Address :: " + schoolAddress);
   console.error(`School Completion Year :: ${schoolYear}`);
 
-  //College Details
+  /**
+   * TODO :: College Details
+   */
   console.log("College Name :: " + collegeName);
   console.warn("College Address :: " + collegeAddress);
   console.error(`College Completion Year :: ${collegeYear}`);
@@ -38,7 +46,9 @@ educationDetails(
   2016
 );
 
-// employeeDetails in Object Identifier
+/**
+ * employeeDetails in Object Identifier
+ */
 let employeeDetails = {
   companyName: "TCS",
   companyLocation: "Waverock,Hyderabad",
