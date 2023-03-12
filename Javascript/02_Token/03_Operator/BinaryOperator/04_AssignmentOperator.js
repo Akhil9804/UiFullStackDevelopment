@@ -1,0 +1,14 @@
+let num1 = 20;
+console.log(`Value and type of num1 :: ${num1} ${typeof num1}`);
+num1 += 10;
+console.log(`Value and type of num1 :: ${num1} ${typeof num1}`);
+num1 -= 5;
+console.log(`Value and type of num1 :: ${num1} ${typeof num1}`);
+num1 *= 2;
+console.log(`Value and type of num1 :: ${num1} ${typeof num1}`);
+num1 /= 10;
+console.log(`Value and type of num1 :: ${num1} ${typeof num1}`);
+num1 %= 4;
+console.log(`Value and type of num1 :: ${num1} ${typeof num1}`);
+num1 **= 2;
+console.log(`Value and type of num1 :: ${num1} ${typeof num1}`);
