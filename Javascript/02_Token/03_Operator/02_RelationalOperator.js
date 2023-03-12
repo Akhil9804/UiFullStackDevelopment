@@ -63,3 +63,25 @@ num2 = 20;
 console.log(`${num1} is triple equal to ${num2} = ${num1 === num2}`);
 num2 = "10";
 console.log(`${num1} is triple equal to ${num2} = ${num1 === num2}`);
+
+/**
+ * TODO :: Not Equal To Operator
+ */
+num1 = 10;
+num2 = 10;
+console.log(`${num1} is not equal to ${num2} = ${num1 != num2}`);
+num2 = 20;
+console.log(`${num1} is not equal to ${num2} = ${num1 != num2}`);
+num2 = "10";
+console.log(`${num1} is not equal to ${num2} = ${num1 != num2}`);
+
+/**
+ * TODO :: Strictly Not Equal To Operator
+ */
+num1 = 10;
+num2 = 10;
+console.log(`${num1} is strictly not equal to ${num2} = ${num1 !== num2}`);
+num2 = 20;
+console.log(`${num1} is strictly not equal to ${num2} = ${num1 !== num2}`);
+num2 = "10";
+console.log(`${num1} is strictly not equal to ${num2} = ${num1 !== num2}`);
