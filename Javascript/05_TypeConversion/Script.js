@@ -1,6 +1,4 @@
-/**
- * TODO :: Convert String to Number
- */
+console.log("Convert String to Number");
 let str = "10";
 console.log(`Value and type of str :: ${str} ${typeof str}`);
 let num = Number(str);
@@ -9,15 +7,13 @@ str = "Akhil";
 console.log(`Value and type of str :: ${str} ${typeof str}`);
 num = Number(str);
 console.log(`Value and type of num :: ${num} ${typeof num}`);
-let nullValue = "null";
-console.log(`Value and type of nullValue :: ${nullValue} ${typeof nullValue}`);
-num = Number(nullValue);
+str = "NaN";
+console.log(`Value and type of str :: ${str} ${typeof str}`);
+num = Number(str);
 console.log(`Value and type of num :: ${num} ${typeof num}`);
-let undefinedValue;
+console.log();
 
-/**
- * TODO :: Convert Boolean to Number
- */
+console.log("Convert Boolean to Number");
 let bool = true;
 console.log(`Value and type of bool :: ${bool} ${typeof bool}`);
 num = Number(bool);
@@ -26,19 +22,30 @@ bool = false;
 console.log(`Value and type of bool :: ${bool} ${typeof bool}`);
 num = Number(bool);
 console.log(`Value and type of num :: ${num} ${typeof num}`);
+console.log();
 
-/**
- * TODO :: Convert Number to String
- */
+console.log("Convert Number to String");
 num = 10;
 console.log(`Value and type of num :: ${num} ${typeof num}`);
 str = String(num);
 console.log(`Value and type of str :: ${str} ${typeof str}`);
+num = -10;
+console.log(`Value and type of num :: ${num} ${typeof num}`);
+str = String(num);
+console.log(`Value and type of str :: ${str} ${typeof str}`);
+num = 10.67;
+console.log(`Value and type of num :: ${num} ${typeof num}`);
+str = String(num);
+console.log(`Value and type of str :: ${str} ${typeof str}`);
+console.log();
 
-/**
- * TODO :: Convert Boolean to String
- */
+console.log("Convert Boolean to String");
 bool = true;
 console.log(`Value and type of bool :: ${bool} ${typeof bool}`);
 str = String(bool);
 console.log(`Value and type of str :: ${str} ${typeof str}`);
+bool = false;
+console.log(`Value and type of bool :: ${bool} ${typeof bool}`);
+str = String(bool);
+console.log(`Value and type of str :: ${str} ${typeof str}`);
+console.log();
