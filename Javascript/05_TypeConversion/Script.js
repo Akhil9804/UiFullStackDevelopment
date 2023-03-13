@@ -56,6 +56,10 @@ num = 0;
 console.log(`Value and type of num :: ${num} ${typeof num}`);
 bool = Boolean(num);
 console.log(`Value and type of bool :: ${bool} ${typeof bool}`);
+num = NaN;
+console.log(`Value and type of num :: ${num} ${typeof num}`);
+bool = Boolean(num);
+console.log(`Value and type of bool :: ${bool} ${typeof bool}`);
 console.log();
 
 console.log("Convert Boolean to String");
@@ -117,3 +121,5 @@ console.log(
 bool = Boolean(unDefinedValue);
 console.log(`Value and type of bool :: ${bool} ${typeof bool}`);
 console.log();
+
+// Falsy Value = 0,"",null,undefined,NaN
