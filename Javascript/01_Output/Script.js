@@ -42,3 +42,9 @@ studentDetails = {
 };
 
 console.table(studentDetails);
+
+/**
+ * TODO :: Console.assert
+ */
+let num = 20;
+console.assert(num > 19, "Experssion return false");

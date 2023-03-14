@@ -1,4 +1,4 @@
-let num = prompt(parseInt("Enter num value"));
+let num = parseInt(prompt("Enter num value"));
 if (num > 10) {
   console.log(`${num} is greater than 10`);
 }
