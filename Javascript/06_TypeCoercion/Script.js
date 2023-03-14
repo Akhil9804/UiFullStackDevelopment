@@ -1,37 +1,149 @@
-/**
- * TODO :: String Conversion
- */
-let str = "hello";
-console.log(`Value and type of str :: ${str} ${typeof str}`);
-let bool = true;
-console.log(`Value and type of bool :: ${bool} ${typeof bool}`);
-let result = str + bool;
-console.log(`Value and type of result :: ${result} ${typeof result}`);
-
-let nullValue = null;
-console.log(`Value and type of nullValue :: ${nullValue} ${typeof nullValue}`);
-result = str + nullValue;
-console.log(`Value and type of result :: ${result} ${typeof result}`);
-
-let undefinedValue;
-console.log(
-  `Value and type of undefinedValue :: ${undefinedValue} ${typeof undefinedValue}`
-);
-result = str + undefinedValue;
-console.log(`Value and type of result :: ${result} ${typeof result}`);
-
 let num = 10;
+let str1 = "20";
+let str2 = "Akhil";
+let value1 = null;
+let value2;
+let bool = true;
 console.log(`Value and type of num :: ${num} ${typeof num}`);
-result = str + num;
+console.log(`Value and type of str1 :: ${str1} ${typeof str1}`);
+console.log(`Value and type of str2 :: ${str2} ${typeof str2}`);
+console.log(`Value and type of value1 :: ${value1} ${typeof value1}`);
+console.log(`Value and type of value2 :: ${value2} ${typeof value2}`);
+console.log(`Value and type of bool :: ${bool} ${typeof bool}`);
+console.log();
+
+console.log("Implicit String Conversion");
+console.log();
+
+console.log(`Using Addition Operator`);
+let result = str1 + num;
+console.log(`${str1} + ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str2 + num;
+console.log(`${str2} + ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str1 + value1;
+console.log(`${str1} + ${value1} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str2 + value2;
+console.log(`${str1} + ${value2} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str1 + bool;
+console.log(`${str1} + ${bool} = ${result}`);
 console.log(`Value and type of result :: ${result} ${typeof result}`);
 console.log();
 
-/**
- * TODO :: Numeric Conversion
- */
-num = 10;
-console.log(`Value and type of num :: ${num} ${typeof num}`);
-str = "20";
-console.log(`Value and type of str :: ${str} ${typeof str}`);
-result = str - num;
+console.log("Implicit Number Conversion");
+console.log();
+
+console.log(`Using Subtraction Operator`);
+result = str1 - num;
+console.log(`${str1} - ${num} = ${result}`);
 console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str2 - num;
+console.log(`${str2} - ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str1 - value1;
+console.log(`${str1} - ${value1} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str2 - value2;
+console.log(`${str2} - ${value2} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str1 - bool;
+console.log(`${str1} - ${bool} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+console.log();
+
+console.log("Using Multiplication Operator");
+result = str1 * num;
+console.log(`${str1} * ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str2 * num;
+console.log(`${str2} * ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str1 * value1;
+console.log(`${str1} * ${value1} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str2 * value2;
+console.log(`${str2} * ${value2} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str1 * bool;
+console.log(`${str1} * ${bool} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+console.log();
+
+console.log("Using Division Operator");
+result = str1 / num;
+console.log(`${str1} / ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str2 / num;
+console.log(`${str2} / ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str1 / value1;
+console.log(`${str1} / ${value1} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str2 / value2;
+console.log(`${str2} / ${value2} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str1 / bool;
+console.log(`${str1} / ${bool} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+console.log();
+
+console.log("Using Modules Operator");
+result = str1 % num;
+console.log(`${str1} % ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str2 % num;
+console.log(`${str2} % ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str1 % value1;
+console.log(`${str1} % ${value1} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str2 % value2;
+console.log(`${str2} % ${value2} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str1 % bool;
+console.log(`${str1} % ${bool} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+console.log();
+
+console.log("Using Power Operator");
+result = str1 ** num;
+console.log(`${str1} ** ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str2 ** num;
+console.log(`${str2} ** ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str1 ** value1;
+console.log(`${str1} ** ${value1} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str2 ** value2;
+console.log(`${str2} ** ${value2} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = str1 ** bool;
+console.log(`${str1} ** ${bool} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+console.log();
+
+result = bool + num;
+console.log(`${bool} + ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = value1 + num;
+console.log(`${value1} + ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = value2 + num;
+console.log(`${value2} + ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+console.log();
+
+result = bool - num;
+console.log(`${bool} - ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = value1 - num;
+console.log(`${value1} - ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+result = value2 - num;
+console.log(`${value2} - ${num} = ${result}`);
+console.log(`Value and type of result :: ${result} ${typeof result}`);
+console.log();
